@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HaptiRide: movilidad más segura mediante señales hápticas para ciclistas.">
+  <title>HaptiRide | Movilidad segura</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="js/tema.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/reveal.js" defer></script>
+  <script src="js/toast.js" defer></script>
+  <script src="js/validacion.js" defer></script>
+  <script src="js/interacciones/contador-patrones.js" defer></script>
+  <script src="js/interacciones/filtro-testimonios.js" defer></script>
+  <script src="js/interacciones/lightbox-galeria.js" defer></script>
+  <script src="js/interacciones/barra-progreso.js" defer></script>
+</head>
+
+<body>
+  <div id="barra-progreso" class="barra-progreso" aria-hidden="true"></div>
+  <!-- ENCABEZADO -->
+  <header id="inicio" class="encabezado">
+    <div class="contenedor barra">
+      <a href="#inicio" class="marca" aria-label="HaptiRide, ir al inicio"><img src="imagenes/logo.svg"
+          alt="Logotipo de HaptiRide" width="46"><span>HaptiRide</span></a>
+      <!-- MENÚ HORIZONTAL SIN DESPLEGABLE -->
+      <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#nosotros">Quiénes somos</a>
+        <div class="menu-item has-submenu"><a href="#servicios" class="submenu-trigger" aria-haspopup="true"
+            aria-expanded="false">Servicios ▾</a>
+          <ul class="submenu" role="menu" hidden>
+            <li><a href="#servicios" role="menuitem">Giros inteligentes</a></li>
+            <li><a href="#servicios" role="menuitem">Alertas de seguridad</a></li>
+            <li><a href="#servicios" role="menuitem">Confirmación de llegada</a></li>
+          </ul>
+        </div>
+        <a href="#proyectos">Proyectos</a><a href="#galeria">Galería</a><a href="#testimonios">Testimonios</a><a
+          href="#contacto">Contáctanos</a>
+      </nav>
+      <button id="btn-tema" class="boton-tema" type="button" aria-label="Activar tema claro">☀️</button>
+    </div>
+  </header>
+  <main>
+    <!-- PRESENTACIÓN -->
+    <section class="hero" aria-labelledby="titulo-inicio">
+      <div class="contenedor hero-grid">
+        <div><span class="etiqueta">MOVILIDAD · INNOVACIÓN · SEGURIDAD</span>
+          <h1 id="titulo-inicio">Siente el camino.<br><em>Disfruta el recorrido.</em></h1>
+          <p>HaptiRide propone una experiencia de navegación para ciclistas con señales hápticas intuitivas, pensada
+            para reducir las distracciones y fomentar una movilidad urbana más segura.</p>
+          <div class="acciones"><a class="boton" href="#proyectos">Conoce el proyecto ↗</a><a class="boton secundario"
+              href="#servicios">Explorar señales</a></div>
+        </div>
+        <div class="visual" role="img" aria-label="Ilustración de bicicleta y señales de navegación">
+          <div class="orbita"></div><span class="bicicleta">🚴</span>
+          <div class="aviso aviso-uno">↰ Giro a la izquierda</div>
+          <div class="aviso aviso-dos">⌁ Vibración inteligente</div>
+          <div class="aviso aviso-tres">✓ Ruta activa</div>
+        </div>
+      </div>
+    </section>
+    <!-- QUIÉNES SOMOS -->
+    <section id="nosotros" class="seccion claro" data-reveal>
+      <div class="contenedor"><span class="etiqueta oscura">SOBRE NOSOTROS</span>
+        <h2>Quiénes somos</h2>
+        <div class="dos-columnas">
+          <div class="imagen-conceptual" role="img" aria-label="Representación del equipo y la movilidad sostenible">
+            🚲<small>TECNOLOGÍA PARA MOVERTE MEJOR</small></div>
+          <div>
+            <p>Somos el equipo detrás de <strong>HaptiRide</strong>, una propuesta que integra diseño centrado en las
+              personas, accesibilidad y tecnología para mejorar la experiencia de los ciclistas.</p>
+            <h3>Nuestra misión</h3>
+            <p>Facilitar una navegación ciclista más intuitiva y segura mediante indicaciones hápticas claras y
+              accesibles.</p>
+            <h3>Nuestra visión</h3>
+            <p>Contribuir a ciudades donde desplazarse en bicicleta sea una opción cómoda, inclusiva y sostenible.</p>
+            <p><strong>ODS relacionados:</strong> ODS 3, Salud y bienestar, y ODS 11, Ciudades y comunidades
+              sostenibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTEGRANTE 1: SERVICIOS -->
+    <section id="servicios" class="seccion" data-reveal>
+      <div class="contenedor"><span class="etiqueta">LO QUE PROPONEMOS</span>
+        <h2>Servicios</h2>
+        <p class="intro">Una forma de recibir indicaciones sin depender constantemente de mirar una pantalla.</p>
+        <div class="tarjetas">
+          <article class="tarjeta" data-reveal><span class="simbolo">↰</span>
+            <h3>Giros inteligentes</h3>
+            <p>Patrones de vibración diferenciados para indicar giros a la izquierda y derecha.</p>
+          </article>
+          <article class="tarjeta" data-reveal><span class="simbolo">↑</span>
+            <h3>Continuar recto</h3>
+            <p>Una señal estable para reconocer cuándo seguir por la ruta.</p>
+          </article>
+          <article class="tarjeta" data-reveal><span class="simbolo">⚠</span>
+            <h3>Alertas de seguridad</h3>
+            <p>Vibraciones de advertencia para llamar la atención ante situaciones que requieren precaución.</p>
+          </article>
+          <article class="tarjeta" data-reveal><span class="simbolo">◎</span>
+            <h3>Confirmación de llegada</h3>
+            <p>Una señal específica para reconocer el final del recorrido.</p>
+          </article>
+        </div>
+        <div class="demo">
+          <div>
+            <h3>Prueba las señales</h3>
+            <p>Selecciona un patrón para visualizar su secuencia. Esta demostración es ilustrativa.</p>
+            <p id="contador-patrones" class="contador-patrones">Patrones probados: <strong>0</strong></p>
+          </div>
+          <div class="demo-controles"><button type="button" data-patron="izquierda">Izquierda</button><button
+              type="button" data-patron="derecha">Derecha</button><button type="button"
+              data-patron="recto">Recto</button><button type="button" data-patron="alerta">Alerta</button><button
+              type="button" data-patron="llegada">Llegada</button></div>
+          <div id="respuesta-patron" class="respuesta" aria-live="polite">Selecciona una señal para comenzar.</div>
+          <div class="pulsos" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+    <!-- INTEGRANTE 2: PROYECTOS -->
+    <section id="proyectos" class="seccion claro" data-reveal>
+      <div class="contenedor"><span class="etiqueta oscura">NUESTRA SOLUCIÓN</span>
+        <h2>Proyectos</h2>
+        <div class="dos-columnas">
+          <div>
+            <h3>HaptiRide: navegación háptica para ciclistas</h3>
+            <p>El proyecto explora cómo comunicar instrucciones de navegación mediante vibraciones, con el objetivo de
+              disminuir la necesidad de consultar el teléfono durante el trayecto.</p>
+            <ul class="lista">
+              <li>Diseño de patrones de vibración comprensibles.</li>
+              <li>Prototipo de experiencia de navegación.</li>
+              <li>Alertas y orientación durante el recorrido.</li>
+              <li>Evaluación de usabilidad y accesibilidad.</li>
+            </ul><a class="boton oscuro" href="#galeria">Ver la experiencia ↗</a>
+          </div>
+          <div class="panel-ruta"><span class="etiqueta">VISTA CONCEPTUAL</span>
+            <h3>Tu próximo recorrido</h3>
+            <div class="demo-controles selector-rutas" aria-label="Selecciona el modo de ruta">
+              <button type="button" class="btn-ruta activo" data-modo="segura" aria-pressed="true">Ruta Segura</button>
+              <button type="button" class="btn-ruta" data-modo="rapida" aria-pressed="false">Ruta Rápida</button>
+              <button type="button" class="btn-ruta" data-modo="confort" aria-pressed="false">Ruta Confort</button>
+            </div>
+            <div class="ruta"><span>● Inicio</span>
+              <div class="linea-ruta"></div><span>◆ Destino</span>
+            </div>
+            <div id="estado-ruta" class="estado" aria-live="polite">↱ Próximo giro a la derecha · Tráfico Bajo (15 min)</div>
+            <small id="detalle-ruta">Modo Segura: Prioriza ciclovías segregadas y calles de bajo flujo vehicular. Esta es una demostración conceptual, no navegación GPS en tiempo real.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- INTEGRANTE 3: GALERÍA -->
+    <section id="galeria" class="seccion" data-reveal>
+      <div class="contenedor"><span class="etiqueta">EXPLORA LA IDEA</span>
+        <h2>Galería</h2>
+        <div class="galeria">
+          <figure data-reveal><img src="imagenes/galeria-navegacion.svg" alt="Concepto de navegación de HaptiRide">
+            <figcaption>Navegación guiada</figcaption>
+          </figure>
+          <figure data-reveal><img src="imagenes/galeria-senales.svg" alt="Señales hápticas del sistema">
+            <figcaption>Lenguaje de vibraciones</figcaption>
+          </figure>
+          <figure data-reveal><img src="imagenes/galeria-seguridad.svg" alt="Concepto de seguridad para ciclistas">
+            <figcaption>Movilidad consciente</figcaption>
+          </figure>
+        </div>
+        <h3>Video del proyecto</h3>
+        <p>Video<code> </code> </p><video controls preload="metadata" poster="imagenes/galeria-navegacion.svg"
+          width="720">
+          <source src="videos/haptiride.mp4" type="video/mp4">Tu navegador no admite video HTML5.
+        </video>
+      </div>
+    </section>
+    <!-- INTEGRANTE 4: TESTIMONIOS -->
+    <section id="testimonios" class="seccion claro" data-reveal>
+      <div class="contenedor"><span class="etiqueta oscura">VOCES Y NECESIDADES</span>
+        <h2>Testimonios</h2>
+        <p class="intro">Ejemplos ilustrativos de necesidades de usuarios. Sustituir por citas reales de entrevistas
+          antes de presentar resultados de investigación.</p>
+        <div class="filtros-testimonios">
+          <button type="button" class="filtro-btn activo" data-filtro="todos">Todos</button>
+          <button type="button" class="filtro-btn" data-filtro="urbano">Ciclista urbano</button>
+          <button type="button" class="filtro-btn" data-filtro="frecuente">Usuario frecuente</button>
+        </div>
+        <div class="tarjetas dos">
+          <blockquote data-perfil="urbano">“Me gustaría recibir las indicaciones sin tener que revisar el celular en cada cruce.”<footer>
+              Perfil hipotético: ciclista urbano</footer>
+          </blockquote>
+          <blockquote data-perfil="frecuente">“Las alertas deberían distinguirse fácilmente para saber cuándo debo prestar más atención.”
+            <footer>Perfil hipotético: usuario frecuente de bicicleta</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <!-- INTEGRANTE 5: CONTÁCTANOS -->
+    <section id="contacto" class="seccion" data-reveal>
+      <div class="contenedor"><span class="etiqueta">HABLEMOS</span>
+        <h2>Contáctanos</h2>
+        <div class="dos-columnas">
+          <div>
+            <h3>Construyamos una movilidad mejor</h3>
+            <p>¿Tienes comentarios sobre el prototipo o quieres compartir tu experiencia como ciclista? Déjanos un
+              mensaje.</p>
+            <p>Proyecto académico: <strong>HaptiRide</strong></p>
+            <p class="nota">El formulario es una demostración local y no envía datos a un servidor.</p>
+          </div>
+          <form id="form-contacto"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text"
+              autocomplete="name" required placeholder="Tu nombre"><small class="error-campo" data-error-for="nombre"></small><label for="correo">Correo electrónico</label><input
+              id="correo" name="correo" type="email" autocomplete="email" required
+              placeholder="nombre@ejemplo.com"><small class="error-campo" data-error-for="correo"></small><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje"
+              rows="5" required placeholder="Escribe tu mensaje"></textarea><small class="error-campo" data-error-for="mensaje"></small><button class="boton" type="submit">Validar
+              mensaje →</button>
+            <p id="estado-formulario" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie-superior"><a href="#inicio" class="marca"><img src="imagenes/logo.svg" alt=""
+            width="38"><span>HaptiRide</span></a>
+        <p>Diseño para una movilidad más segura y sostenible.</p>
+      </div>
+      <p>Redes sociales: <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a> · <a
+          href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a
+          href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a></p><small>© 2026
+        HaptiRide. Proyecto académico. Todos los derechos reservados.</small>
+    </div>
+  </footer>
+<div id="lightbox" class="lightbox" hidden>
+    <button class="lightbox-cerrar" type="button" aria-label="Cerrar imagen">×</button>
+    <img id="lightbox-img" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+
+</html>
